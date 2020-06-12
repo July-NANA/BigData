@@ -7,19 +7,19 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="scala-sdk-2.11.8" level="application" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../资源/第三课/flink dependencies" />
+          <root url="file://$MODULE_DIR$/../../../../资源/第三课/flink dependencies" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/../../../资源/第三课/flink dependencies" />
+          <root url="file://$MODULE_DIR$/../../../../资源/第三课/flink dependencies" />
         </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/../../../资源/第三课/flink dependencies" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../../资源/第三课/flink dependencies" recursive="false" type="SOURCES" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../资源/第三课/flink dependencies" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../资源/第三课/flink dependencies" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="scala-sdk-2.11.8" level="application" />
   </component>
 </module>

@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b71a48a1-ae08-48e8-a23c-b92dc4e6f0b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../1.实操一/1_minute_b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../1.实操一/1_minute_b/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/top5_city/Main$$anon$2$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/top5_city/Main$$anon$2$$anon$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/top5_city/Main$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/top5_city/Main$$anon$2$$anonfun$createSerializer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/top5_city/Main$$anon$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/top5_city/Main$$anon$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/top5_city/Main$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/top5_city/Main$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/top5_city/Main$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/top5_city/Main$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/top5_city/Main$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/top5_city/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/top5_city/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top5_city.iml" beforeDir="false" afterPath="$PROJECT_DIR$/top5_city.iml" afterDir="false" />
-    </list>
+    <list default="true" id="b71a48a1-ae08-48e8-a23c-b92dc4e6f0b6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="607" />
     <option name="y" value="-15" />
     <option name="width" value="1488" />
@@ -104,7 +92,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../1.实操一/1_minute_b" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../dataflow_opt_hw" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -158,15 +146,15 @@
       <workItem from="1591500001645" duration="8000" />
       <workItem from="1591604964703" duration="2325000" />
       <workItem from="1591944733694" duration="6890000" />
-      <workItem from="1591958477302" duration="10422000" />
+      <workItem from="1591958477302" duration="10561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25841000" />
+    <option name="totallyTimeSpent" value="25980000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1995731" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -177,7 +165,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33482644" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33482644" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
