@@ -1,0 +1,10 @@
+select t1.sfzhm,t1.xm,t1.asjbh,t1.ajmc,t1.aj_jyqk from
+(select  j.sfzhm,j.xm,t.asjbh,t.ajmc,t.aj_jyqk,b.zdz,c.qy_mc jdmc,d.qy_mc wbmc
+from default.t_aj_asjjbxx t
+inner join default.t_aj_rk_map a on t.asjbh = a.asjbh
+inner join default.t_rk_jbxx j on a.sfzhm = j.sfzhm
+left  join (select * from default.t_lkcc_jbxx where czsj != '') b on a.sfzhm = b.sfzhm and b.zdz = '{深圳}' and b.czsj >= '{p_start_time}' and b.czsj <= '{p_end_time}'
+left join (select * from default.t_lgzs_jbxx where tfsj = '' ) c on a.sfzhm = c.sfzhm and c.qy_mc like '{深圳}%' and c.rzsj >= '{p_start_time}' and c.rzsj <= '{p_end_time}'
+left join (select * from default.t_wbsw_jbxx where xjsj = '' ) d on a.sfzhm = d.sfzhm and d.qy_mc like '{深圳}%' and d.drsj >= '{p_start_time}' and d.drsj <= '{p_end_time}'
+) t1 where 1=1 and (t1.zdz != '' or t1.jdmc != '' or t1.wbmc != '');
+
