@@ -1,9 +1,16 @@
 import java.util.{Properties, UUID}
 
+import org.apache.flink.api.common.functions.ReduceFunction
+
+//import com.alibaba.fastjson.{JSON, JSONObject}
+import org.apache.flink.api.common.functions.MapFunction
 import org.apache.flink.api.common.serialization.SimpleStringSchema
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010
+
 import scala.collection.mutable.ListBuffer
+//import org.json.{JSONArray, JSONObject}
+import scala.util.parsing.json.JSON
 
 object Main {
   /**
@@ -27,15 +34,40 @@ object Main {
       new SimpleStringSchema, kafkaProperties)
     kafkaConsumer.setCommitOffsetsOnCheckpoints(true)
     val inputKafkaStream = env.addSource(kafkaConsumer)
-    println("inputKafkaStream: "+inputKafkaStream.getClass)
-//    inputKafkaStream.print()
-    val det=inputKafkaStream.flatMap { _.toLowerCase.split(",") filter {  _.contains("destination") } }
-      .map { (_, 1) }
-      .keyBy(0)
-      .sum(1)
 
+//    inputKafkaStream.print()
+//    val det=inputKafkaStream.flatMap { _.toLowerCase.split(",") filter {  _.contains("destination") } }
+//      .map { (_, 1) }
+//      .keyBy(0)
+//      .sum(1)
+
+
+//        .map(x=>{
+//          val jsonObj: JSONObject = JSON.parseObject(x)
+//        })
+
+    val det=inputKafkaStream.flatMap { _.toLowerCase.split("\t") }
+        .map{
+      x=>
+        val j=JSON.parseFull(x) match {
+          case Some(map: Map[String,Any])=>map
+          case other=>Map("destination"->"error")
+        }
+        (j("destination").toString,x)
+      }
+      .keyBy(0)
+      .reduce(new ReduceFunction[(String,String)]{
+        override def reduce(value1:(String,String),value2:(String,String)):(String,String)={
+          (value1._1,value1._2+"||"+value2._2)
+        }
+      })
+    println("inputKafkaStream: "+inputKafkaStream.getClass)
     println("det: "+det.getClass)
-    det.print()
+//    det.map(x => println(x._1))
+//    det.map(x => println(x._1.getClass))
+//    det.map(x => println(x))
+//    println(det)
+//    det.print()
 //    det.map(x=>println(x))
 //    val sortedMap=det.order
 //    val lie = det.map(t=>t._2.toInt)
